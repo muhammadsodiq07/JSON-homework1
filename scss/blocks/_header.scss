@@ -1,0 +1,90 @@
+.info__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.info__item {
+  width: 380px;
+  height: 320px;
+  list-style: none;
+  border: 1px solid #000;
+  background-color: rgb(244, 244, 244);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.itemAnimation {
+  transition: all 2s linear;
+  animation: removeAnima 2s ease-in-out both; 
+}
+
+@keyframes removeAnima {
+  0%{
+    position: absolute;
+    top: 50px;
+    opacity: 1;
+  }
+  50%{
+    position: absolute;
+    top: -50px;
+    opacity: 1;
+  }
+}
+
+.info__div {
+  position: relative;
+  padding-left: 35px;
+  padding-top: 15px;
+}
+.info__box {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.info__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.info__name {
+  margin: 0 !important;
+}
+
+.info__desc {
+  margin: 0 !important;
+}
+
+.info__company {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: gray;
+}
+
+.info__companyName {
+  padding-right: 30px;
+}
+
+
+.remove-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-10%, -50%);
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  background-color: red !important;
+  border-radius: 8px;
+  color: white;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+.info__item:hover .remove-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
