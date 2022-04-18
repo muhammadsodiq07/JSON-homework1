@@ -44,7 +44,7 @@ function showUser(userData) {
       <p class="info__companyName">hildegard.org</p>
     </div>
     <div class="buttons">
-      <button class="btn remove-btn">Remove</button>
+      <button class="btn remove-btn">Remove User</button>
     </div>
 </div>
     `
