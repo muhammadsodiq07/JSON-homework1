@@ -186,8 +186,8 @@ img {
   border-radius: 8px;
   color: white;
   cursor: pointer;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   opacity: 0;
 }
 
