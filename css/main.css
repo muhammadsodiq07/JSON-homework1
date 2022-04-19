@@ -71,47 +71,66 @@ img {
 
 .info__item {
   width: 380px;
-  height: 320px;
+  height: auto;
   list-style: none;
   border: 1px solid #000;
   border-radius: 8px;
   background-color: #f4f4f4;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) inset 0px 8px 20px;
+          box-shadow: rgba(149, 157, 165, 0.2) inset 0px 8px 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+  padding-bottom: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
-.itemAnimation {
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
-  -webkit-animation: removeAnima 2s ease-in-out both;
-          animation: removeAnima 2s ease-in-out both;
+.info__item:nth-child(1) {
+  -webkit-animation: item-anim 0.89s 0.1s both;
+          animation: item-anim 0.89s 0.1s both;
 }
 
-@-webkit-keyframes removeAnima {
-  0% {
-    position: absolute;
-    top: 50px;
+.info__item:nth-child(2) {
+  -webkit-animation: item-anim 0.89s 0.29s both;
+          animation: item-anim 0.89s 0.29s both;
+}
+
+.info__item:nth-child(3) {
+  -webkit-animation: item-anim 0.89s 0.39s both;
+          animation: item-anim 0.89s 0.39s both;
+}
+
+.info__item:nth-child(4) {
+  -webkit-animation: item-anim 0.89s 0.49s both;
+          animation: item-anim 0.89s 0.49s both;
+}
+
+.info__item:nth-child(5) {
+  -webkit-animation: item-anim 0.89s 0.59s both;
+          animation: item-anim 0.89s 0.59s both;
+}
+
+.info__item:nth-child(6) {
+  -webkit-animation: item-anim 0.89s 0.69s both;
+          animation: item-anim 0.89s 0.69s both;
+}
+
+@-webkit-keyframes item-anim {
+  100% {
     opacity: 1;
-  }
-  50% {
-    position: absolute;
-    top: -50px;
-    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
-@keyframes removeAnima {
-  0% {
-    position: absolute;
-    top: 50px;
+@keyframes item-anim {
+  100% {
     opacity: 1;
-  }
-  50% {
-    position: absolute;
-    top: -50px;
-    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 

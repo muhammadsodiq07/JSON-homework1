@@ -5,34 +5,52 @@
   padding-top: 20px;
 }
 
-.info__item {
+.info__item { 
   width: 380px;
-  height: 320px;
+  height: auto;
   list-style: none;
   border: 1px solid #000;
   border-radius: 8px;
   background-color: rgb(244, 244, 244);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) inset 0px 8px 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-}
-.itemAnimation {
-  transition: all 2s linear;
-  animation: removeAnima 2s ease-in-out both; 
+  padding-bottom: 10px;
+  opacity: 0;
+  transition: all 0.25s ease;
+  transform: translateY(-50px);
 }
 
-@keyframes removeAnima {
-  0%{
-    position: absolute;
-    top: 50px;
+
+
+
+.info__item:nth-child(1) {
+  animation: item-anim 0.89s 0.1s both;
+}
+.info__item:nth-child(2) {
+  animation: item-anim 0.89s 0.29s both;
+}
+.info__item:nth-child(3) {
+  animation: item-anim 0.89s 0.39s both;
+}
+.info__item:nth-child(4) {
+  animation: item-anim 0.89s 0.49s both;
+}
+.info__item:nth-child(5) {
+  animation: item-anim 0.89s 0.59s both;
+}
+.info__item:nth-child(6) {
+  animation: item-anim 0.89s 0.69s both;
+}
+
+
+@keyframes item-anim {
+  100% {
     opacity: 1;
-  }
-  50%{
-    position: absolute;
-    top: -50px;
-    opacity: 1;
+    transform: translateY(0px);
   }
 }
+
 
 .info__div {
   position: relative;
@@ -91,3 +109,7 @@
   opacity: 1;
   transform: translate(-50%, -50%);
 }
+
+
+
+
